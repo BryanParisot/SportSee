@@ -1,0 +1,19 @@
+.NavigationVertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 120px;
+  height: 780px;
+  background: $black;
+  color: white;
+
+  .contain_logo {
+  }
+
+  p {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 12px;
+  }
+}
