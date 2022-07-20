@@ -1,0 +1,26 @@
+.NavigationHorizontal {
+  display: flex;
+  align-items: center;
+  padding: 18px 0px;
+  background: $black;
+  font-size: 24px;
+
+  img {
+    width: 178px;
+    height: 60px;
+    margin-left: 28px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+    a {
+      color: white;
+    }
+  }
+  .nav-active {
+    color: red;
+  }
+}
