@@ -10,9 +10,9 @@ function App() {
     <Router>
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/profil" exact component={Profil} />
-        <Route path="/community" exact component={Community}/>
-        <Route path="/setting" exact component={Settings}/>
+        <Route path="/profil/:id" exact component={Profil} />
+        <Route path="/community" exact component={Community} />
+        <Route path="/setting" exact component={Settings} />
         <Route component={NotFound} />
       </Switch>
     </Router>
