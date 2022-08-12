@@ -1,0 +1,32 @@
+.pie_charts {
+  position: relative;
+  background-color: #fbfbfb;
+  width: 258px;
+  height: 263px;
+  border-radius: 5px;
+
+  .score{
+    position: relative;
+    top: 10%;
+    left: 10%;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .score_today {
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    right: 38%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #74798C;
+
+    .score_number{
+        font-size: 26px;
+        font-weight: 700;
+        color: #282D30;
+
+    }
+  }
+}
