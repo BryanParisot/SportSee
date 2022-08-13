@@ -14,7 +14,7 @@ export function useFetch(service, userId) {
         const response = await fetch(url);
         const data = await response.json();
 
-        const dataFormat = format(data, service);
+        const dataFormat = await format(data, service);
         setData(dataFormat);
       } catch (error) {
         console.error(error);

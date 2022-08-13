@@ -1,21 +1,47 @@
 .profil {
   .contain_nav_information {
     display: flex;
-    .nameUser {
-      font-size: 48px;
-      color: $black;
-      margin-left: 107px;
-      margin-top: 50px;
+    .contain_more_info_profil {
+      .nameUser {
+        width: 100%;
+        font-size: 48px;
+        color: $black;
+        margin-top: 50px;
 
-      p {
-        span {
-          color: $primary;
+        p {
+          span {
+            color: $primary;
+          }
+        }
+
+        .contain_text_for_win {
+          font-size: 18px;
+          margin-top: 20px;
+        }
+        .contain_litle_charts {
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
       }
+      width: 100%;
+      padding: 0px 107px;
+      .contain_charts {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
 
-      .contain_text_for_win {
-        font-size: 18px;
-        margin-top: 20px;
+        .contain_litle_charts {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 30px;
+        }
+        .cards{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
       }
     }
   }

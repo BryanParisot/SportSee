@@ -2,10 +2,12 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 258px;
+  width: 270px;
   height: 124px;
   border: 6px;
   background-color: #fbfbfb;
+  border-radius: 5px;
+
 
   .contain_logo {
     display: flex;
@@ -15,7 +17,7 @@
     height: 60px;
     border-radius: 6px;
     z-index: 1;
-    opacity: 0.07;
+    opacity: 0.7;
 
     img {
       z-index: 10000;
@@ -34,14 +36,14 @@
 }
 
 .bg--calories {
-  background-color: #ff0000;
+  background-color: #ff000063;
 }
 .bg--proteines {
-  background-color: #4ab8ff1a;
+  background-color: #4AB8FF1A;
 }
 .bg--glucides {
-  background-color: #f9ce23;
+  background-color: #f9ce2365;
 }
 .bg--lipides {
-  background-color: #fd51811a;
+  background-color: #FD51811A;
 }
