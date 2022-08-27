@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import NavigationHorizontal from "../components/Navigations/NavigationHorizontal";
 import NavigationVertical from "../components/Navigations/NavigationVertical";
 
@@ -10,8 +10,8 @@ const Home = () => {
       <div className="contain_nav_information">
         <NavigationVertical />
         <div className="profil_name">
-          <NavLink to="profil/12">profil 12</NavLink>
-          <NavLink to="profil/18">profil 18</NavLink>
+          <Link to="profil/12">profil 12</Link>
+          <Link to="profil/18">profil 18</Link>
         </div>
       </div>
     </div>

@@ -21,7 +21,7 @@ const Profil = () => {
         <div className="contain_more_info_profil">
           <div className="nameUser">
             <p>
-               Bonjour <span>{datas.userInfos?.firstName}</span> 
+              Bonjour <span>{datas.userInfos?.firstName}</span>
             </p>
             <p className="contain_text_for_win">
               Félicitation ! Vous avez explosé vos objectifs hier 👏
@@ -33,20 +33,20 @@ const Profil = () => {
               <div className="contain_litle_charts">
                 <LineCharts userId={id} />
                 <RadarCharts userId={id} />
-                <PieCharts userId={id} /> 
+                <PieCharts userId={id} />
               </div>
             </div>
             <div className="cards">
               <CardMacro
                 logo="../pictures/logos/path.png"
-                 title={datas.keyData?.calorieCount}
+                title={datas.keyData?.calorieCount}
                 macro="KCal"
                 weight="Calories"
                 bgColor="bg--calories"
               />
               <CardMacro
                 logo="../pictures/logos/chicken.png"
-                 title={datas.keyData?.proteinCount}
+                title={datas.keyData?.proteinCount}
                 macro="g"
                 weight="Proteines"
                 bgColor="bg--proteines"
