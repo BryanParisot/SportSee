@@ -2,27 +2,38 @@ import { useEffect, useState } from "react";
 
 const BaseUrl = "http://localhost:3000";
 
+/**
+ * return the datas fetch in back-end
+ * @param {string} service name of the service
+ * @param {number} userId id of the user
+ */
 export function useFetch(service, userId) {
   const [data, setData] = useState([]);
 
-  const nameActivity = currentService(service, userId);
+  const nameOfActivity = currentService(service, userId);
   useEffect(() => {
-    if (!nameActivity) return;
+    if (!nameOfActivity) return;
     async function fetchData() {
       try {
-        const url = `${BaseUrl}${nameActivity}`;
+        const url = `${BaseUrl}${nameOfActivity}`;
         const response = await fetch(url);
         const data = await response.json();
 
-        const dataFormat = await format(data, service);
-        setData(dataFormat);
+        const dataWithTheNewFormat = await format(data, service);
+        setData(dataWithTheNewFormat);
+
       } catch (error) {
         console.error(error);
       }
     }
     fetchData();
-  }, [service, userId, nameActivity]);
-  
+  }, [service, userId, nameOfActivity]);
+
+  /**
+   * return the path exact for the datas
+   * @param {string} service name of the service
+   * @param {number} userId id of the user
+   */
   function currentService(service, userId) {
     switch (service) {
       case "userName":
@@ -40,6 +51,11 @@ export function useFetch(service, userId) {
     }
   }
 
+  /**
+   * rreturn the exact data relative to the service name
+   * @param {string} data data for api
+   * @param {string} service name of serive
+   */
   function format(data, service) {
     switch (service) {
       case "averageSessions":
