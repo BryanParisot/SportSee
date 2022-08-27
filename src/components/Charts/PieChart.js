@@ -5,20 +5,21 @@ const PieCharts = ({ userId }) => {
   const datas = useFetch("percentageActivity", userId);
   const COLORS = ["#FF0101B2"];
 
-  const dataaa = [
+  const dataNewFormat = [
     {
       name: "groupe",
       value: datas?.todayScore || datas?.score,
     },
     { name: "group", value: 1 },
   ];
+
   return (
     <div className="pie_charts">
       <p className="score">Score</p>
       <ResponsiveContainer width="100%" height="100%">
         <PieChart width={400} height={400}>
           <Pie
-            data={dataaa}
+            data={dataNewFormat}
             dataKey="value"
             innerRadius={70}
             outerRadius={90}
@@ -33,6 +34,7 @@ const PieCharts = ({ userId }) => {
       <div className="score_today">
         <p className="score_number">
           {100 * datas?.todayScore || 100 * datas?.score}%
+          <div className="round"></div>
         </p>
         <p>de votre</p>
         <p>objectif</p>

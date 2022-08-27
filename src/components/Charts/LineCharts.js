@@ -11,6 +11,9 @@ import { useFetch } from "../../utils/hooks";
 const LineCharts = ({ userId }) => {
   const datas = useFetch("averageSessions", userId);
 
+  /**
+   * return the days in relation to numbers
+   */
   for (let index of datas) {
     const day = index.day;
     switch (day) {
@@ -75,7 +78,7 @@ const LineCharts = ({ userId }) => {
               fontWeight: 500,
             }}
           />
-          <YAxis hide={true} />
+          <YAxis hide={true} domain={[0, "dataMax + 30"]} />
           <Tooltip
             cursor={{
               stroke: "rgba(0, 0, 0, 0.1)",
