@@ -7,7 +7,11 @@ SportSee is an application for sportsmen. It allows you to keep an eye on your d
 
 To run the application, you need to download the back office: https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard
 
-And 
+Step 1 : 
+
+### `npm install`
+
+step 2 : 
 
 #### `npm start`
 
