@@ -1,0 +1,60 @@
+.barChart {
+  width: 835px;
+  height: 320px;
+  background: #fbfbfb;
+  padding: 30px 30px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
+
+  .contain_legends {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 15px;
+    .legends {
+      display: flex;
+      justify-content: space-between;
+      width: 33%;
+
+      color: #74798c;
+      font-size: 14px;
+      .legend_weight {
+        display: flex;
+        align-items: center;
+        .buble_red {
+          height: 6px;
+          width: 6px;
+          border-radius: 50%;
+          background: black;
+          margin-right: 7px;
+        }
+      }
+      .legend_clc_burn {
+        @extend .legend_weight;
+      }
+      .buble_black {
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+        background: red;
+        margin-right: 7px;
+      }
+    }
+  }
+}
+
+.chart {
+  margin-top: 40px;
+}
+
+.custom-tooltip-bar-chart {
+  color: white;
+  height: 63px;
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 4px 8px;
+}

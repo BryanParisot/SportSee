@@ -1,0 +1,45 @@
+.pie_charts {
+  position: relative;
+  background-color: #fbfbfb;
+  width: 258px;
+  height: 263px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
+
+  .score {
+    position: relative;
+    top: 10%;
+    left: 10%;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .score_today {
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    right: 38%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #74798c;
+    z-index: 1000;
+
+  
+// .round{
+//   position: absolute;
+//   top: -60%;
+//   background-color: white;
+//   border-radius: 50%;
+//   width: 145px;
+//   height: 145px;
+//   right: -78%;
+//   z-index: 1;
+// }
+
+    .score_number {
+      font-size: 26px;
+      font-weight: 700;
+      color: #282d30;
+    }
+  }
+}
