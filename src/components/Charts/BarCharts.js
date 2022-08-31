@@ -24,7 +24,7 @@ const CustomTooltip = ({ active, payload  }) => {
 
 const BarCharts = ({ userId }) => {
   const datas = useFetch("activity", userId);
-  const array = [];
+  const arrayOfDatas = [];
 
   const mapOnTheDatas = datas.map((i, index) => {
     return { i, index };
@@ -34,7 +34,7 @@ const BarCharts = ({ userId }) => {
    * crete the new array for the chart
    */
   for (let a of mapOnTheDatas) {
-    array.push({
+    arrayOfDatas.push({
       id: a.index + 1,
       kilogram: a.i.kilogram,
       calories: a.i.calories,
@@ -60,7 +60,7 @@ const BarCharts = ({ userId }) => {
         <BarChart
           width={500}
           height={300}
-          data={array}
+          data={arrayOfDatas}
           barGap={8}
           margin={{
             top: 5,
