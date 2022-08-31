@@ -11,6 +11,10 @@ and clone this repository
 
 Step 1 : 
 
+Node version v14.16.1, to see your version use command :
+
+#### `node --version`
+
 ### `npm install`
 
 step 2 : 
