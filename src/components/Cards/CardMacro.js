@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const CardMacro = (props) => {
   return (
@@ -15,5 +16,11 @@ const CardMacro = (props) => {
     </div>
   );
 };
-
+CardMacro.propTypes = {
+  bgColor: PropTypes.string,
+  logo: PropTypes.string,
+  title: PropTypes.string,
+  macro: PropTypes.string,
+  weight: PropTypes.string,
+};
 export default CardMacro;

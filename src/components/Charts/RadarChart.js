@@ -7,18 +7,11 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { useFetch } from "../../utils/hooks";
+import PropTypes from "prop-types";
+
 
 const RadarCharts = ({ userId }) => {
   const [data, setData] = useState([]);
-
-  //   const ACTIVITIES_ORDER_IN_CHART = [
-  //     "Intensité",
-  //     "Vitesse",
-  //     "Force",
-  //     "Endurance",
-  //     "Energie",
-  //     "Cardio",
-  //   ];
 
   const datas = useFetch("performance", userId);
 
@@ -76,4 +69,9 @@ const RadarCharts = ({ userId }) => {
     </div>
   );
 };
+
+RadarChart.propTypes = {
+  userId: PropTypes.number,
+};
+
 export default RadarCharts;
