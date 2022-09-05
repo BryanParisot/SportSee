@@ -7,6 +7,8 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { useFetch } from "../../utils/hooks";
+import PropTypes from "prop-types";
+
 
 const LineCharts = ({ userId }) => {
   const datas = useFetch("averageSessions", userId);
@@ -103,5 +105,10 @@ const LineCharts = ({ userId }) => {
     </div>
   );
 };
+
+LineCharts.propTypes = {
+  userId: PropTypes.number,
+};
+
 
 export default LineCharts;

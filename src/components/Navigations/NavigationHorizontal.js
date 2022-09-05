@@ -1,5 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import PropTypes from "prop-types";
+
 
 const NavigationHorizontal = (props) => {
   return (
@@ -30,5 +32,10 @@ const NavigationHorizontal = (props) => {
     </div>
   );
 };
+
+NavigationHorizontal.propTypes = {
+  img: PropTypes.string,
+};
+
 
 export default NavigationHorizontal;

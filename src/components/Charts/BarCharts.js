@@ -8,6 +8,8 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { useFetch } from "../../utils/hooks";
+import PropTypes from "prop-types";
+
 
 const CustomTooltip = ({ active, payload  }) => {
   if (active) {
@@ -125,4 +127,9 @@ const BarCharts = ({ userId }) => {
     </div>
   );
 };
+
+BarCharts.propTypes = {
+  userId: PropTypes.number,
+};
+
 export default BarCharts;

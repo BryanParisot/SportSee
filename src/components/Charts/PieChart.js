@@ -1,5 +1,6 @@
 import { PieChart, Pie, ResponsiveContainer, Cell } from "recharts";
 import { useFetch } from "../../utils/hooks";
+import PropTypes from "prop-types";
 
 const PieCharts = ({ userId }) => {
   const datas = useFetch("percentageActivity", userId);
@@ -42,5 +43,10 @@ const PieCharts = ({ userId }) => {
     </div>
   );
 };
+
+PieChart.propTypes = {
+  userId: PropTypes.number,
+};
+
 
 export default PieCharts;
