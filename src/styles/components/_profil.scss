@@ -2,6 +2,8 @@
   .contain_nav_information {
     display: flex;
     .contain_more_info_profil {
+      width: 100%;
+      padding: 0px 90px 0px 109px;
       .nameUser {
         width: 100%;
         font-size: 48px;
@@ -24,8 +26,6 @@
           justify-content: center;
         }
       }
-      width: 100%;
-      padding: 0px 107px;
       .contain_charts {
         display: flex;
         justify-content: space-between;
@@ -37,11 +37,35 @@
           justify-content: space-between;
           margin-top: 30px;
         }
-        .cards{
+        .cards {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1446px) {
+  .contain_more_info_profil {
+    padding: 0px 30px !important;
+
+    .nameUser {
+      font-size: 33px !important;
+      margin-top: 20px !important;
+
+      .contain_text_for_win {
+        font-size: 14px !important;
+        margin-top: 18px !important;
+      }
+    }
+    .contain_charts {
+      flex-direction: column-reverse;
+      margin-top: 30px !important;
+
+      .cards {
+        flex-direction: row !important;
       }
     }
   }
