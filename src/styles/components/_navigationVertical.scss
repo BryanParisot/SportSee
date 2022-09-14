@@ -7,10 +7,19 @@
   height: 830px;
   background: $black;
   color: white;
+  padding: 0px 27px;
 
   p {
     writing-mode: vertical-rl;
     text-orientation: mixed;
+    transform: rotate(-180deg);
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1446px) {
+  .NavigationVertical {
+    height: 900px;
+    padding: 0px 15px !important;
   }
 }

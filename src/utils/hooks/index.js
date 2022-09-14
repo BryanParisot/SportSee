@@ -52,7 +52,7 @@ export function useFetch(service, userId) {
   }
 
   /**
-   * rreturn the exact data relative to the service name
+   * return the exact data relative to the service name
    * @param {string} data data for api
    * @param {string} service name of serive
    */
