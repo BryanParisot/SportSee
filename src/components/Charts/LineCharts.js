@@ -41,7 +41,7 @@ const LineCharts = ({ userId }) => {
         index.day = "D";
         break;
       default:
-        console.log("number dosent exist");
+        console.log("");
     }
   }
   const CustomTooltip = ({ active, payload }) => {
@@ -107,7 +107,7 @@ const LineCharts = ({ userId }) => {
 };
 
 LineCharts.propTypes = {
-  userId: PropTypes.number,
+  userId: PropTypes.string,
 };
 
 

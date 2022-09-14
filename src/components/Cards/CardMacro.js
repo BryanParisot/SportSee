@@ -19,7 +19,7 @@ const CardMacro = (props) => {
 CardMacro.propTypes = {
   bgColor: PropTypes.string,
   logo: PropTypes.string,
-  title: PropTypes.string,
+  title: PropTypes.number,
   macro: PropTypes.string,
   weight: PropTypes.string,
 };

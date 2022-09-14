@@ -129,7 +129,7 @@ const BarCharts = ({ userId }) => {
 };
 
 BarCharts.propTypes = {
-  userId: PropTypes.number,
+  userId: PropTypes.string,
 };
 
 export default BarCharts;

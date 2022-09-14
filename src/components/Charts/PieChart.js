@@ -35,7 +35,7 @@ const PieCharts = ({ userId }) => {
       <div className="score_today">
         <p className="score_number">
           {100 * datas?.todayScore || 100 * datas?.score}%
-          <div className="round"></div>
+          <span className="round"></span>
         </p>
         <p>de votre</p>
         <p>objectif</p>
