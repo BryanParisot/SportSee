@@ -8,10 +8,15 @@ import CardMacro from "../components/Cards/CardMacro";
 import NavigationHorizontal from "../components/Navigations/NavigationHorizontal";
 import NavigationVertical from "../components/Navigations/NavigationVertical";
 import { useFetch } from "../utils/hooks";
+import { mockUsersInfos } from "../utils/mocksData";
 
 const Profil = () => {
   const { id } = useParams();
   const datas = useFetch("userName", id);
+  const dada = mockUsersInfos(id)
+
+  // console.log('datas',datas)
+   console.log('dada',dada)
 
   return (
     <div className="profil">
@@ -22,6 +27,8 @@ const Profil = () => {
           <div className="nameUser">
             <p>
               Bonjour <span>{datas.userInfos?.firstName}</span>
+              <p>1 : </p>
+
             </p>
             <p className="contain_text_for_win">
               Félicitation ! Vous avez explosé vos objectifs hier 👏
