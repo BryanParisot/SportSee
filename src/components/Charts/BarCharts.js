@@ -27,7 +27,6 @@ const CustomTooltip = ({ active, payload  }) => {
 
 const BarCharts = ({ userId }) => {
   const datas = useFetch("activity", userId);
-  console.log(datas)
   const arrayOfDatas = [];
 
   const mapOnTheDatas = datas.map((i, index) => {
