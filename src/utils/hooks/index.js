@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 
-const BaseUrl = "http://localhost:3000";
+const isLive = process.env.REACT_APP_ENVIRONMENT === "LIVE";
+
+const BaseUrl = isLive ? "http://localhost:3000" : "../../../datas/";
 
 /**
  * return the datas fetch in back-end
@@ -21,7 +23,6 @@ export function useFetch(service, userId) {
 
         const dataWithTheNewFormat = await format(data, service);
         setData(dataWithTheNewFormat);
-
       } catch (error) {
         console.error(error);
       }
@@ -37,15 +38,19 @@ export function useFetch(service, userId) {
   function currentService(service, userId) {
     switch (service) {
       case "userName":
-        return `/user/${userId}`;
+        return isLive ? `/user/${userId}` : `${userId}/infouser.json`;
       case "percentageActivity":
-        return `/user/${userId}`;
+        return isLive ? `/user/${userId}` : `${userId}/infouser.json`;
       case "activity":
-        return `/user/${userId}/activity`;
+        return isLive ? `/user/${userId}/activity` : `${userId}/activity.json`;
       case "averageSessions":
-        return `/user/${userId}/average-sessions`;
+        return isLive
+          ? `/user/${userId}/average-sessions`
+          : `${userId}/averagesession.json`;
       case "performance":
-        return `/user/${userId}/performance`;
+        return isLive
+          ? `/user/${userId}/performance`
+          : `${userId}/performance.json`;
       default:
         console.log("error");
     }

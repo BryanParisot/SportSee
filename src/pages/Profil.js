@@ -21,7 +21,7 @@ const Profil = () => {
         <div className="contain_more_info_profil">
           <div className="nameUser">
             <p>
-              Bonjour <span>{datas.userInfos?.firstName}</span>
+              Bonjour {process.env.REACT_APP_environment} <span>{datas.userInfos?.firstName}</span>
             </p>
             <p className="contain_text_for_win">
               Félicitation ! Vous avez explosé vos objectifs hier 👏
