@@ -54,6 +54,11 @@ To run tests, run the following command
 
 **Client:** React, Sass, recharts
 
+## Maquette du site
+
+![App Screenshot](https://raw.githubusercontent.com/BryanParisot/bryan_parisot_12_20072022/main/public/pictures/sport%20see%20capture.png)
+
+
 
 
 ## 🚀 Qui suis-je 
