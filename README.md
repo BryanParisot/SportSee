@@ -1,3 +1,4 @@
+![Logo](https://raw.githubusercontent.com/BryanParisot/bryan_parisot_12_20072022/main/public/pictures/logo.png)
 
 # `SportSee`
 
@@ -54,9 +55,20 @@ To run tests, run the following command
 **Client:** React, Sass, recharts
 
 
+
+## 🚀 Qui suis-je 
+Un développeur frontend passionné et curieux de découvrir de nouveaux défis.
+
+
+## 🔗 Links
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bryan-parisot-a99b0a1b1/)
+
+
+
 ## Authors
 
-- [@ParisotBryan](https://github.com/BryanParisot)
+- [@bryanParisot](https://github.com/BryanParisot)
+
 
 
 
