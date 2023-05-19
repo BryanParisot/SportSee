@@ -31,7 +31,7 @@ Node version v14.16.1, to see your version use command :
 
 node --version
 ```
-## Run Locally
+## Run en local
 
 Clone the project
 
@@ -58,7 +58,7 @@ Start the server
 ```
 
 
-## Running Tests
+## Lancer les Tests
 
 To run tests, run the following command
 
