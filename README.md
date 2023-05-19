@@ -1,8 +1,23 @@
 ![Logo](https://raw.githubusercontent.com/BryanParisot/bryan_parisot_12_20072022/main/public/pictures/logo.png)
 
-# `SportSee`
+# SportSee
+SportSee is an application for sportsmen. It allows you to keep an eye on your daily evolution with the help of graphs.
 
-SportSee is an application for sportsmen. It allows you to keep an eye on your daily evolution with the help of graphs. 
+Startup dédiée au coaching sportif. En pleine croissance, l’entreprise va aujourd’hui lancer une nouvelle version de la page profil de l’utilisateur. Cette page va notamment permettre à l’utilisateur de suivre le nombre de sessions réalisées ainsi que le nombre de calories brûlées.
+
+Lien maquette : https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR?type=design&node-id=0-1
+
+## Mision 
+
+L’objectif est de refaire la page profil avec React
+
+## Compétences validés 
+
+Assurer la qualité des données d'une application
+
+Développer des éléments graphiques avancés à l'aide de bibliothèques JavaScript
+
+Interagir avec un service Web
 
 ## for the run 
 
